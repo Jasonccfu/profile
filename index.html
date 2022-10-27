@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Jason's Profile</title>
-    </head>
 
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="https://github.com/Jasonccfu%22%3EGithub"></li>
-                    <li><a href="https://www.linkedin.com/in/chang-fu-chen-9a40a6249/%22%3ELinkedIn"></li>
-                    <li><a href="#">Portfolio</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewprot" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/ccs/style.css" type="text/css" />
+    <title>Jason's Profile</title>
+</head>
+
+<body>
+    <header>
+        <nav class="text-right">
+            <ul>
+                <li><a href="https://github.com/Jasonccfu" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/chang-fu-chen-9a40a6249/%22%3E" target="_blank">LinkedIn</a>
+                </li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-        <h1>Profile</h1>
-        <img src="./assets/images/photo.png" alt="photo of me"
-        width="200" height="200">
+        <h1 class="text-center">Profile</h1>
+        <figure>
+            <img src="./assets/images/photo.png" alt="photo of me" width="200" height="200">
+            <figcaption class="text.center"></figcaption>
+        </figure>
+        <section>
+            <h2 class="text-center">About me</h2>
+            <p>
+                I am a web developer and, I am a student at UW Bootcamp.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2 class="text-center">Contact Me</h2>
+            <form>
+                <ul>
+
+                    <li>
+                        <label>Name:</label>
+                        <input type="text" name="user-name">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label>Email:</label>
+                        <input type="text" name="user-email">
+                    </li>
+                </ul>
+                <div>
+                    <button type="submit">SEND</button>
+                </div>
+            </form>
+        </section>
     </main>
 
-    <section>
-        <h2>About me</h2>
-        <p>
-            I am a web developer and, I am a student at UW Bootcamp. I am learning how to code and will build more of my work on this website.
-        </p>
-    </section>
+    <footer class="text-center">
+        <h6> &copy; 2022 My Profile Website</h6>
+    </footer>
+</body>
 
-    <section>
-        <h2>Contact Me</h2>
-        <ul>
-            <label>Name:</label> 
-            <input type="text" name="user-name"></input>
-        </ul>
-        <ul>
-            <label>Email:</label> 
-            <input type="text" name="user-email"></input>
-        </ul>
-        <div>
-            <button type="submit">SEND</button>
-        </div>
-    </section>
-    
-      <footer>
-            <h5>
-                2022 My Profile Website
-            </h5>
-        </footer>
-    </body>
 </html>
